@@ -1,7 +1,7 @@
 # python-fundamentals
 
 # GOAL: Complete 6 Python Projects
-(https://www.codementor.io/ilyaas97/6-python-projects-for-beginners-yn3va03fs)
+https://www.codementor.io/ilyaas97/6-python-projects-for-beginners-yn3va03fs
 
 
 # Project 1: Guess The Number
