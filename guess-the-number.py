@@ -2,15 +2,17 @@ import random
 number = random.randint(0, 21)
 number_of_guesses = 0
 guess = input('I am thinking of a number between 1 and 20. Guess what number I am thinking of: ')
-if int(guess) == number:
-    print('Your guess is correct.')
-while (not guess == number) and (number_of_guesses < 6):
+while number_of_guesses < 6:
     number_of_guesses += 1
-    if int(guess) > number:
-        print('Your guess is greater than the number I am thinking of.')
-        guess = input('Guess again! ')
-    elif int(guess) < number:
-        print('Your guess is less than the number I am thinking of.')
-        guess = input('Guess again! ')
+    if int(guess) == number:
+        print('Your guess is correct.')
     else:
-        print('Your guess is correct!')
+        if int(guess) > number:
+            print('Your guess is greater than the number I am thinking of.')
+        elif int(guess) < number:
+            print('Your guess is less than the number I am thinking of.')
+        guess = input('Guess again!')
+
+
+
+
